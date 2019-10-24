@@ -101,7 +101,6 @@ intax <- function(a, b, d) {#计算个人所得税函数income tax for individua
   for (i in 2:length(d)){
     本期应预扣税额[i] <- 预扣税额[i]-预扣税额[i-1]
   }
-
   本期收入 <- d[1]
   if(length(d)!=1){
     for (i in 2:length(d)){
